@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "A Hello World HTTP server",
   "main": "main.js",
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14"
+  },
   "scripts": {
     "test": "node test.js",
     "start": "node main.js"
