@@ -1,6 +1,6 @@
 # use a node base image
-FROM hellonode
-FROM sonar-scanner
+FROM getintodevops-hellonode:1
+#FROM sonar-scanner
 
 # set maintainer
 LABEL maintainer "kushwaha_a@hcl.com"
@@ -12,4 +12,4 @@ EXPOSE 9878
 CMD ["npm", "test"]
 
 # scan code as sonar-scanner
-CMD ["sonar-scanner", " "]
+#CMD sonar-scanner
