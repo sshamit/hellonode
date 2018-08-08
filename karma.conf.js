@@ -3,11 +3,11 @@ module.exports = function (config) {
         basePath: '',
         frameworks: ['jasmine'],
         files: [
-            'calculator.js',
-            'calculator.specs.js'
+            'js/calculator.js',
+            'test/calculator.specs.js'
         ],
         preprocessors: {
-            'calculator.js': ['coverage']
+            'js/calculator.js': ['coverage']
         },
         plugins: [
             'karma-jasmine',
