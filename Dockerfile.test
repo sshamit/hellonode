@@ -1,0 +1,15 @@
+# use a node base image
+FROM hellonode
+FROM sonar-scanner
+
+# set maintainer
+LABEL maintainer "kushwaha_a@hcl.com"
+
+# tell docker what port to expose
+ENV PORT 9878
+EXPOSE 9878
+
+CMD ["npm", "test"]
+
+# scan code as sonar-scanner
+CMD ["sonar-scanner", " "]
